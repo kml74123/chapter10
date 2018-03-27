@@ -1,0 +1,9 @@
+#!/bin/bash
+
+telnet www.wikipedia.org 80
+GET /HTTP/1.0
+
+curl --trace_ascii trace_file http://www.wikipedia.org/
+
+echo 'run nmap'
+nmap 10.1.2.2
